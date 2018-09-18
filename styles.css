@@ -1,0 +1,119 @@
+.brown {
+  background-color: #4F220E; }
+
+.red {
+  background-color: #E82C0C; }
+
+.orange {
+  background-color: #EE8F40; }
+
+.yellow {
+  background-color: #FFF357; }
+
+.green {
+  background-color: #40E840; }
+
+.bluegreen {
+  background-color: #37BDB6; }
+
+.lightblue {
+  background-color: #1EEDFF; }
+
+.blue {
+  background-color: #4356BD; }
+
+.purple {
+  background-color: #9962E8; }
+
+.white {
+  background-color: #FFFFFF; }
+
+.black {
+  background-color: #000000; }
+
+.lightbrown {
+  background-color: #C48223; }
+
+.pink {
+  background-color: #FC77BA; }
+
+.lightyellow {
+  background-color: #FFFBB5; }
+
+.yellowgreen {
+  background-color: #D9FF28; }
+
+.grey {
+  background-color: #CCCCCC; }
+
+.container {
+  max-width: 880px;
+  margin: 0 auto; }
+  .container .grid .row .box {
+    border: 1px solid #CCCCCC;
+    width: 20px;
+    height: 20px;
+    display: table-cell;
+    cursor: pointer; }
+  .container .color-palette {
+    max-width: 880px;
+    margin: 1em auto;
+    text-align: center; }
+    .container .color-palette .colors {
+      border: 1px solid #CCCCCC;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer; }
+  .container .tool-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-radius: 8px 8px 0px 0px; }
+    .container .tool-box .click.active,
+    .container .tool-box .draw.active {
+      background-color: #DDDDDD; }
+    .container .tool-box .click,
+    .container .tool-box .draw,
+    .container .tool-box .clear {
+      border: 1px solid #CCCCCC;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-shadow: 0px 0px 2px #FFFFFF; }
+      .container .tool-box .click:hover,
+      .container .tool-box .draw:hover,
+      .container .tool-box .clear:hover {
+        background-color: #DDDDDD; }
+      .container .tool-box .click:active, .container .tool-box .click:focus,
+      .container .tool-box .draw:active,
+      .container .tool-box .draw:focus,
+      .container .tool-box .clear:active,
+      .container .tool-box .clear:focus {
+        background-color: #FC77BA; }
+    .container .tool-box .colors {
+      border: 1px solid #CCCCCC;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 50%;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-shadow: 0px 0px 2px #FFFFFF; }
+
+/*# sourceMappingURL=styles.css.map */

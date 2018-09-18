@@ -1,0 +1,117 @@
+$brown: #4F220E;
+$red: #E82C0C;
+$orange: #EE8F40;
+$yellow: #FFF357;
+$green: #40E840;
+$bluegreen: #37BDB6;
+$lightblue: #1EEDFF;
+$blue: #4356BD;
+$purple: #9962E8;
+$white: #FFFFFF;
+$black: #000000;
+
+$lightbrown:#C48223;
+$pink:#FC77BA;
+$lightyellow: #FFFBB5;
+$yellowgreen: #D9FF28;
+$grey: #CCCCCC;
+$lighterGrey : #DDDDDD;
+
+
+.brown {background-color:$brown;}
+.red {background-color:$red;}
+.orange {background-color:$orange;}
+.yellow {background-color:$yellow;}
+.green {background-color:$green;}
+.bluegreen {background-color:$bluegreen;}
+.lightblue{background-color:$lightblue;}
+.blue {background-color:$blue;}
+.purple {background-color:$purple;}
+.white {background-color:$white;}
+.black {background-color:$black;}
+
+.lightbrown {background-color:$lightbrown;}
+.pink {background-color:$pink;}
+.lightyellow {background-color:$lightyellow;}
+.yellowgreen {background-color:$yellowgreen;}
+.grey {background-color:$grey;}
+
+.container{
+    max-width: 880px;
+    margin: 0 auto;
+    .grid{
+        .row{
+            .box{
+                border:1px solid $grey;
+                width: 20px;
+                height: 20px;
+                display: table-cell;
+                cursor:pointer;
+            }
+        }
+    }
+    .color-palette {
+        max-width: 880px;
+        margin: 1em auto;
+        text-align: center;
+        .colors{
+            border: 1px solid $grey;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            display:inline-block;
+            cursor:pointer;
+        }
+    }
+    .tool-box{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        border: 1px solid $grey;
+        background-color: $white;
+        border-radius: 8px 8px 0px 0px;
+        .click,
+        .draw{
+            &.active{
+                background-color:$lighterGrey;
+            }
+        }
+        .click,
+        .draw,
+        .clear {
+            &:hover{
+                background-color:$lighterGrey;
+            }
+            &:active,&:focus{
+                background-color:$pink;
+            }
+            border: 1px solid $grey;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor:pointer;
+            font-size:12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-shadow:0px 0px 2px $white;
+        }
+        .colors {
+            border: 1px solid $grey;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            font-size:12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-shadow:0px 0px 2px $white;
+        }
+    }
+}
